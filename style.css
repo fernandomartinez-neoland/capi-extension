@@ -1,0 +1,13 @@
+.capibara-click {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  z-index: 999999; /* Para que esté siempre arriba */
+  pointer-events: none; /* Para que no bloquee otros clics */
+  animation: pop 0.3s ease-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}

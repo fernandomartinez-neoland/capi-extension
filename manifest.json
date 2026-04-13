@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Capibara Clicker",
+  "version": "1.0",
+  "description": "Muestra una imagen al hacer clic en la página.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["capibara.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
